@@ -33,7 +33,7 @@ info.sort(function(a, b){
     }
 });
 
-console.log(info)
+//console.log(info)
 
 
 info.sort(function(a, b){
@@ -49,4 +49,13 @@ info.sort(function(a, b){
     }
 });
 
-console.log(info);
+//console.log(info);
+
+//e3
+
+var numbers = [1, 4, 9, 3928392839];
+var doubles = numbers.map(function(num) {
+    return num * num;
+});
+
+console.log(doubles)
