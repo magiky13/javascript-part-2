@@ -66,4 +66,42 @@ var doubleAge = infos.map(function(infos) {
     return infos.age * infos.age;
 });
 
-console.log(doubleAge)
+//console.log(doubleAge)
+//e5
+
+
+var adder = function(n1,n2) {
+    return n1 + n2
+}
+
+var multiplier = function(n1,n2){
+    return n1 * n2
+}
+
+var subtracter = function(n1,n2)  {
+    return n1 - n2
+}
+
+var divider = function(n1,n2) {
+    return n1 / n2
+}
+
+
+function operationMaker(operation){
+    
+    if(operation === "add"){
+        return adder;
+    }
+    else if(operation === "subtract"){
+        return subtracter;
+    }
+    else if(operation === "div"){
+        return divider;
+    }
+    else if(operation === "mult"){
+        return multiplier;
+    }
+}
+
+console.log(operationMaker("subtract")(4, 10))
+
