@@ -15,5 +15,38 @@ items.sort(function (a, b) {
 
  
 
-console.log(items);
+//console.log(items);
 
+//e2
+
+var info = [{name: "Simon", email: "simdorvi@hotmail.com"}, {name: "Sara", email: "sara@hotmail.com"}, {name: "Salalalal", email: "alolal@hotmail.com"}]
+info.sort(function(a, b){
+    if(a.name.length > b.name.length) {
+        return -1;
+        
+    }
+    else if (a.name.length < b.name.length){
+        return 1;
+    }
+    else {
+        return 0;
+    }
+});
+
+console.log(info)
+
+
+info.sort(function(a, b){
+    if(a.email > b.email) {
+        return 1;
+        
+    }
+    else if (a.email < b.email){
+        return -1;
+    }
+    else {
+        return 0;
+    }
+});
+
+console.log(info);
