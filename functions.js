@@ -58,4 +58,12 @@ var doubles = numbers.map(function(num) {
     return num * num;
 });
 
-console.log(doubles)
+//console.log(doubles)
+//e4
+
+var infos = [{name: "Simon", age: 66}, {name: "Sara", age: 17}];
+var doubleAge = infos.map(function(infos) {
+    return infos.age * infos.age;
+});
+
+console.log(doubleAge)
